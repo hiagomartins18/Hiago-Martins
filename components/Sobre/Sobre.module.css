@@ -1,0 +1,73 @@
+/* Container CSS */
+.section{
+  min-height: 90vh;
+}
+
+.container{
+  padding: 3rem 0;
+}
+
+
+/* Title CSS */
+.sectionTitle{
+  text-align: center;
+}
+
+.sectionTitle h2{
+  font-size: 2.2rem;
+  color: var(--white-color);
+  padding-bottom: 0.8rem;
+}
+
+.sectionTitle span{
+  color: var(--detail-color);
+  font-size: 1.2rem;
+}
+
+/* Content CSS */
+
+.sectionInfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 1.6rem;
+  margin-top: 3rem;
+}
+
+.infoData p{
+  color: var(--detail-color);
+  font-size: 1.1rem;
+  text-align: left;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+
+/* IMG CSS*/
+.infoImg{
+  background-color: var(--white-color);
+  width: 25rem;
+  height: 25rem;
+  border-radius: 10px;
+  border-left: 5px solid var(--light-green);
+}
+
+@media (max-width: 480px){
+  .sectionInfo{
+    grid-template-columns: 1fr;
+  }
+
+  .infoImg{
+    justify-self: center;
+    margin-bottom: 4rem;
+  }
+
+  .infoData{
+    justify-self: center;
+    text-align: center;
+  }
+
+  .infoData p{
+    text-align: center;
+  }
+}

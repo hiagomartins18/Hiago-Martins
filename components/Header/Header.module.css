@@ -1,0 +1,173 @@
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: .4s;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logotitle{
+  font-size: 1.2rem;
+  color: var(--white-color);
+  letter-spacing: -.125rem;
+}
+
+.logoimg{
+  font-size: 3.125rem;
+  letter-spacing: -.562rem;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.navlist{
+  display: flex;
+  gap: 8px;
+}
+
+.navlist a{
+  font-weight: 400;
+  padding: .625rem 1.06rem;
+  color: var(--white-color);
+  position: relative;
+}
+
+.navlist a::after{
+  content: '';
+  width: 0;
+  position: absolute;
+  background-color: var(--light-green);
+  height: 0.225rem;
+  left: 0;
+  top: 35px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.navlist a:hover::after{
+  width: 100%;
+}
+
+.btnHead{
+  color: var(--bg-color);
+}
+
+header.sticky{
+  background-color: var(--white-color);
+}
+
+header.sticky .nav{
+  padding: .125rem 0;
+}
+
+header.sticky .logo-title{
+  color: var(--bg-color);
+}
+
+header.sticky .logoimg{
+  color: var(--bg-color);
+}
+
+header.sticky .navlist a{
+  color: var(--bg-color);
+}
+
+header.sticky .btn{
+  color: var(--bg-color);
+}
+
+header.sticky .btn:hover{
+  color: var(--white-color);
+}
+
+/*============== Mobile Nav ==============*/
+
+.MobileNavigation{
+  display: none;
+}
+
+/*============== Media Queries ==============*/
+
+@media (max-width: 768px){
+
+  .normalNav{
+    display: none;
+  }
+  .MobileNavigation{
+    display: flex;
+    align-items: center;
+  }
+  .btnHead{
+    display: none;
+  }
+  .Hamburguer{
+    position: absolute;
+    right: 4.5%;
+    cursor: pointer;
+    z-index: 100000001;
+  }
+  header{
+    background-color: var(--white-color);
+  }
+
+  header .navlist a{
+    color: var(--bg-color);
+  }
+  
+  .logoimg{
+    color: black;
+  }
+  .logotitle{
+    color: black;
+  }
+  .nav{
+    padding: .3rem 0;
+  }
+
+  header.sticky .nav{
+    padding: .3rem 0;
+  }
+
+  .mobNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--white-color);
+    right: 0%;
+    top: 1px;
+    width: 40%;
+    height: 100vh;
+    z-index: 100001;
+  }
+
+  .mobNav li{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+}
+
+@media (max-width: 480px){
+  .Hamburguer{
+    right: 0;
+  }
+}

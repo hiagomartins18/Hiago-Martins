@@ -1,0 +1,16 @@
+.btn{
+  padding: .56rem 1.875rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  color: var(--white-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 300;
+  transition: ease .50s;
+  background-color: var(--second-green);
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}

@@ -1,0 +1,97 @@
+/*============== Global Font ==============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+/*============== Global Reset ==============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+/*============== Variables ==============*/
+:root {
+  /*--- Colors ---*/
+  --light-green: hsl(85, 59%, 47.8%);
+  --second-green: hsl(86.7, 48.9%, 36.1%);
+  --bg-color: hsl(205.7, 9.3%, 14.7%);
+  --secondbg-color: hsl(359, 100%, 0%);
+  --p-color: hsl(210, 5.3%, 29.4%);
+  --detail-color: hsl(204, 2.3%, 42.9%);
+  --white-color: hsl(0, 0%, 95.7%);
+}
+
+/*============== Reusable ==============*/
+
+.container {
+  max-width: 71.875rem;
+  margin: 0 auto;
+}
+
+/*============== Custom ScrollBar ==============*/
+
+::-webkit-scrollbar {
+  width: 0.313rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-green);
+  border-radius: 5.625rem;
+}
+
+/*============== Media ==============*/
+
+@media (max-width: 1220px){
+  html{
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 992px){
+  html{
+    font-size: 82%;
+  } 
+}
+
+@media(max-width: 768px){
+  html{
+    font-size: 80%;
+  }
+
+  .container{
+    max-width: 55rem;
+  }
+}
+
+@media (max-width: 480px){
+  .container{
+    max-width: 100%;
+  }
+}
