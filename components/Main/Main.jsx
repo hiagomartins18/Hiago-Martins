@@ -4,7 +4,7 @@ import { InstagramLogo, GithubLogo, LinkedinLogo } from "phosphor-react";
 
 export function Principal() {
   return (
-    <main id="#home">
+    <main id="home">
       <div className={`${styles.home} ${styles.container} container`}>
         <div className={styles.homeText}>
           <h2>Seja bem vindo, me chamo</h2>

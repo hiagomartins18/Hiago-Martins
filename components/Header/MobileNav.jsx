@@ -11,7 +11,7 @@ export function MobileNav() {
     <List
       size={40}
       className={classes.Hamburguer}
-      onClick={() => setOpen(!open)}
+      onClick={() => setOpen(true)}
       color={'green'}
     />;
 
@@ -19,7 +19,7 @@ export function MobileNav() {
     <X
       size={40}
       className={classes.Hamburguer}
-      onClick={() => setOpen(!open)}
+      onClick={() => setOpen(false)}
       color={'green'}
     />;
   return (
@@ -29,19 +29,19 @@ export function MobileNav() {
         <>
         <div className={classes.teste}>
             <ul className={`${classes.navlist} ${classes.mobNav}`}>
-              <li>
+              <li onClick={() => setOpen(false)}>
                 <a href="#home">Home</a>
               </li>
-              <li>
+              <li onClick={() => setOpen(false)}>
                 <a href="#sobre">Sobre</a>
               </li>
-              <li>
+              <li onClick={() => setOpen(false)}>
                 <a href="#skills">Habilidades</a>
               </li>
-              <li>
+              <li onClick={() => setOpen(false)}>
                 <a href="#projects">Projetos</a>
               </li>
-              <li>
+              <li onClick={() => setOpen(false)}>
                 <a href="#contact">Contato</a>
               </li>
               <li>

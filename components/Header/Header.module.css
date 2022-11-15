@@ -168,6 +168,6 @@ header.sticky .btn:hover{
 
 @media (max-width: 480px){
   .Hamburguer{
-    right: 0;
+    right: 1%;
   }
 }
